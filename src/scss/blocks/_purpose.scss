@@ -1,0 +1,39 @@
+.purpose {
+  &__in-container {
+		margin: 150px auto 0 auto;
+  }
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__desc {
+    font-weight: 500;
+    font-size: 20px;
+		margin-bottom: 20px;
+  }
+  &__box {
+		display: flex;
+		gap: 30px;
+		align-items: center;
+  }
+  &__tasks {
+		max-width: 630px;
+		& > *:not(:last-child) {
+			margin-bottom: 30px;
+		}
+  }
+  &__task {
+		position: relative;
+		padding-left: 31px;
+		&::before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			content: "";
+			background: url(./../img/icons/badge-check.svg) no-repeat;
+			width: 20px;
+			height: 20px;
+		}
+  }
+  &__img {
+  }
+}

@@ -1,0 +1,47 @@
+.socials {
+  display: flex;
+  flex-direction: column;
+  row-gap: 28px;
+  align-items: center;
+
+	&__vk > svg rect {
+		transition: all 0.3s ease;
+	}
+
+	&__vk > svg path {
+		transition: all 0.3s ease;
+	}
+
+	&__tg > svg rect {
+		transition: all 0.3s ease;
+	}
+
+	&__tg > svg path {
+		transition: all 0.3s ease;
+	}
+
+  &__vk._dark-mode > svg rect {
+    fill: var(--text-color);
+  }
+
+  &__vk._dark-mode > svg path {
+    fill: white;
+  }
+
+  &__tg._dark-mode > svg rect {
+    fill: var(--text-color);
+  }
+
+  &__tg._dark-mode > svg path {
+    fill: white;
+  }
+
+	& > *:hover{
+		& svg rect  {
+			fill: var(--accent);
+		}
+		& svg path  {
+			fill: var(--text-color);
+		}
+	}
+}

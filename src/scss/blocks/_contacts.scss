@@ -1,0 +1,42 @@
+.slide-contacts {
+  &__container {
+    width: 100%;
+    z-index: 50;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__data {
+    & > *:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  &__data-phone {
+		display: inline-block;
+    font-weight: 700;
+    font-size: 40px;
+		color: #fff;
+		transition: all 0.3s ease;
+
+		&:hover {
+			color: var(--accent);
+		}
+  }
+
+  &__data-text {
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+
+		& > a {
+			color: white;
+			text-decoration: underline !important;
+			transition: all 0.3s ease;
+
+			&:hover {
+				color: var(--accent);
+			}
+		}
+  }
+}

@@ -1,0 +1,133 @@
+.footer {
+  padding: 20px 0 30px 0;
+  background: var(--text-color);
+  &__in-container {
+  }
+  &__floors {
+    & > *:not(:last-child) {
+      border-bottom: 1px solid #a0a5ad;
+      padding: 30px 0px 25px 0px;
+    }
+  }
+  &__first-floor {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__box {
+    max-width: 300px;
+    & > *:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  &__logo {
+    display: inline-block;
+    font-family: var(--font-accent);
+    font-weight: 800;
+    font-size: 24px;
+    letter-spacing: 0.2em;
+    text-transform: lowercase;
+    color: #fff;
+  }
+  &__place {
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+  }
+  &__nav {
+  }
+  &__socials {
+    // display: inline-flex;
+    display: flex;
+    gap: 15px;
+  }
+  &__social {
+    cursor: pointer;
+    max-height: 30px;
+    & > svg rect {
+      transition: all 0.3s ease;
+    }
+
+    &:hover > svg rect {
+      fill: var(--accent);
+    }
+  }
+  &__second-floor {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  &__agreement {
+    display: flex;
+    gap: 15px;
+  }
+  &__agreement-link {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 12px;
+    color: #a0a5ad;
+  }
+  &__desc {
+    max-width: 900px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #a0a5ad;
+
+    & > a {
+      color: #a0a5ad;
+      text-decoration: underline !important;
+    }
+  }
+  &__third-floor {
+    padding-top: 30px;
+    text-align: center;
+  }
+  &__copyright {
+    font-weight: 500;
+    font-size: 12px;
+    color: #a0a5ad;
+
+		& > span {
+			font-weight: 700;
+		}
+
+		& > a {
+			color: #a0a5ad;
+      text-decoration: underline !important;
+		}
+  }
+}
+
+.footer-menu {
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+  &__item {
+    max-width: 150px;
+
+    & > ul {
+      & > *:not(:last-child) {
+        margin-bottom: 10px;
+      }
+
+      & > li a {
+        font-weight: 500;
+        font-size: 14px;
+        color: #a0a5ad;
+
+        &:hover {
+          text-decoration: underline !important;
+        }
+      }
+    }
+  }
+  &__item-title {
+    display: inline-block;
+    width: auto;
+    border-bottom: 1px solid #a0a5ad;
+    padding: 0px 0px 5px 0px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+}

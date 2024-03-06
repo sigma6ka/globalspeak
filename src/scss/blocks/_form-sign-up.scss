@@ -1,0 +1,26 @@
+.form-sign-up {
+  &__box {
+    & > *:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  &__btn {
+    & > *:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  &__btn-agreement {
+    font-size: 12px;
+    color: #a0a5ad;
+
+		& > a {
+			color: #a0a5ad;
+			text-decoration: underline !important;
+			transition: all 0.3s ease;
+
+			&:hover {
+				color: var(--text-color);
+			}
+		}
+  }
+}

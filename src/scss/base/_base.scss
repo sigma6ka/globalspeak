@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:500,800");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900");
+
+html,
+body {
+	height: 100% !important;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+	background: var(--page-bg);
+	&._lock {
+		overflow: hidden;
+	}
+}
+
+[class*="__container"] {
+  max-width: 1320px;
+	margin: 0 auto;
+	padding: 150px 15px;
+}
+
+[class*="__in-container"] {
+  max-width: 1320px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.page {
+	flex: 1 1 auto;
+
+	& > *:not(:last-child) {
+		margin-bottom: 100px;
+	}
+}
+
+._ibg {
+	position: relative;
+}
+
+._ibg img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+
+._title-1 {
+	font-weight: 800;
+  font-size: 96px;
+}
+
+._title-2 {
+	display: flex;
+	justify-content: start;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: var(--text-color);
+}
+
+._subtitle {
+	font-weight: 500;
+	font-size: 20px;
+	margin-bottom: 50px;
+}

@@ -1,0 +1,67 @@
+.faq-spoilers {
+  &__in-container {
+    margin: 150px auto 100px auto;
+  }
+
+	&__title {
+		margin-bottom: 50px;
+	}
+
+  &__spoilers .box {
+    &.box {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    &.box:last-child {
+      margin-bottom: 0;
+    }
+
+    &.box .label {
+      position: relative;
+      padding: 30px 30px 30px 74px;
+      border-bottom: 1px solid #e0e0e0;
+      font-weight: 500;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    &.box .label::before,
+    &.box .label::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      width: 14px;
+      height: 2px;
+      background-color: var(--text-color);
+      transition: transform 0.3s ease;
+    }
+
+    &.box .label::after {
+      transform: translateY(-10%) rotate(-90deg);
+    }
+
+    &.box.active .label::after {
+      transform: translateY(-50%) rotate(0deg);
+    }
+
+    &.box .content {
+      position: relative;
+      overflow: hidden;
+      max-height: 0;
+      transition: 0.3s;
+    }
+
+		&.box .content__box {
+      padding: 30px 70px;
+		}
+
+    &.box .content .content__box p {
+			padding: 15px 0px 15px 15px;
+			border-left: 2px solid #242424;
+      font-weight: 500;
+      color: #a0a5ad;
+    }
+  }
+}

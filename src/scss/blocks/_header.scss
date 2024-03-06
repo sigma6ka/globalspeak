@@ -1,0 +1,155 @@
+.header {
+	height: 100vh;
+	position: relative;
+	background-color: #c4c4c4;
+	color: hsl(0, 0%, 100%);
+
+	&__copyright {
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translate(-50%, 0);
+		font-weight: 500;
+		transition: all 0.3s ease;
+		pointer-events: all;
+
+		& > span {
+			transition: all 0.3s ease;
+			font-weight: 700;
+			color: var(--accent);
+		}
+
+		& > a {
+			transition: all 0.3s ease;
+			color: var(--accent);
+			text-decoration: underline !important;
+		}
+
+		&._dark-mode {
+			color: var(--text-color);
+
+			& > span {
+				color: var(--text-color);
+			}
+
+			& > a {
+				color: var(--text-color);
+			}
+		}
+
+		&._internal-page {
+			position: fixed;
+			bottom: 80px;
+		}
+	}
+}
+
+.header__content {
+	position: absolute;
+	z-index: 90;
+	top: 50px;
+	left: 70px;
+	right: 70px;
+	bottom: 80px;
+
+	pointer-events: none;
+
+	@media (max-width: 1200px) {
+		top: 40px;
+		left: 40px;
+		right: 40px;
+		bottom: 60px;
+	}
+
+	@media (max-width: 767px) {
+		top: 30px;
+		left: 5%;
+		right: 5%;
+		bottom: 30px;
+	}
+}
+
+.header__nav {
+	pointer-events: all;
+}
+
+.header__socials {
+	pointer-events: all;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translate(0%, -50%);
+
+	&._internal-page {
+		position: fixed;
+		left: 70px;
+	}
+}
+
+.header__support {
+	pointer-events: all;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	cursor: pointer;
+
+	&._internal-page {
+		position: fixed;
+		left: 70px;
+		bottom: 80px;
+	}
+}
+
+.header__slider-controls {
+	pointer-events: all;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+
+	@media (max-width: 1023px) {
+		display: none;
+	}
+}
+
+.header__scrollbar {
+	pointer-events: all;
+
+	position: absolute;
+	right: 0px;
+	top: 45%;
+
+	width: 400px;
+	height: 10px;
+
+	transform: rotate(90deg) translate(50%, 0%);
+	transform-origin: right top;
+
+	@media (min-width:768px) and (max-height: 700px){
+		width: 300px;
+	}
+
+	@media (max-width: 767px) {
+		transform: none;
+		top: unset;
+		bottom: -15px;
+		left: 0;
+		right: unset;
+		width: 100%;
+	}
+}
+
+.swiper-scrollbar-drag {
+	transition: all 0.3s ease
+}
+
+.swiper-scrollbar-drag._dark-mode {
+	background: #242424 !important;
+}
+
+.swiper-scrollbar-horizontal {
+	transition: all 0.3s ease;
+}
+
+.swiper-scrollbar-horizontal._dark-mode {
+	background: rgba(36, 36, 36, 0.3) !important;
+}

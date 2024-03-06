@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Вход в профиль</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    @@include('./blocks/loader.html')
+    <div class="wrapper">
+      <header>@@include('./internal-pages/auth/auth-header.html')</header>
+      <main class="page">
+        <section class="page__auth auth">
+          <div class="auth__container">
+            <div class="auth__btns">
+              <div class="auth__btn _sign-in _active">Вход в профиль</div>
+              /
+              <div class="auth__btn _sign-up">Регистрация</div>
+            </div>
+						<form action="" class="auth__form _sign-in _show">
+							@@include('./internal-pages/auth/form-sign-in.html')
+						</form>
+						<form action="" class="auth__form _sign-up">
+							@@include('./internal-pages/auth/form-sign-up.html')
+						</form>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>

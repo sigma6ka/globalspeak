@@ -1,0 +1,105 @@
+.slide-free-lesson {
+  &__container {
+    color: var(--text-color);
+  }
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  &__form {
+    width: 100%;
+    max-width: 630px;
+    border-radius: 15px;
+    padding: 50px;
+    background: #fff;
+    box-shadow: 0 4px 18px 0 rgba(205, 205, 205, 0.25);
+		cursor: default;
+  }
+  &__wrapper {
+  }
+  &__advantages {
+		margin-bottom: 30px;
+		& > *:not(:last-child) {
+			margin-bottom: 30px;
+		}
+  }
+  &__item {
+		position: relative;
+		padding-left: 31px;
+		&::before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			content: "";
+			background: url(./../../img/icons/badge-check.svg) no-repeat;
+			width: 20px;
+			height: 20px;
+		}
+  }
+  &__img {
+  }
+}
+
+.slide-free-lesson-form {
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+  &__title-text {
+  }
+  &__title-bullets {
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    & > *:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  &__input {
+    width: 100%;
+    font-weight: 500;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+
+    &::placeholder {
+      font-weight: 500;
+      color: #a0a5ad;
+    }
+  }
+
+  &__btn-box {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  &__btn {
+    border-radius: 50px;
+    padding: 16px 50px;
+    min-width: 251px;
+    background: #d3ff24;
+    font-weight: 500;
+  }
+  &__agreement {
+    font-size: 12px;
+    color: #a0a5ad;
+
+		& > a {
+			color: #a0a5ad;
+			text-decoration: underline !important;
+			transition: all 0.3s ease;
+
+			&:hover {
+				color: var(--text-color);
+			}
+		}
+  }
+}
