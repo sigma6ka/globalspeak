@@ -28,8 +28,11 @@
     font-weight: 600;
     font-size: 20px;
     color: #fff;
+		display: flex;
+		gap: 10px;
+		align-items: center;
 
-		& > a {
+		a {
 			color: white;
 			text-decoration: underline !important;
 			transition: all 0.3s ease;
@@ -37,6 +40,10 @@
 			&:hover {
 				color: var(--accent);
 			}
+		}
+
+		& > div > img {
+			width: 70px;
 		}
   }
 }

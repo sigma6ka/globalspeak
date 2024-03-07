@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Определение уровня</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div id="loader" class="loader-wrapper">
+  <div class="load">
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+  </div>
+</div>
+
+    <div class="wrapper">
+      <header><div class="header__content _dark-mode">
+  <div class="header__nav"><nav class="nav">
+  <a href="./index.html" class="nav__logo">
+    Global <br />
+    Speak.ru
+  </a>
+
+  <div class="nav__list">
+    <ul>
+      <li><a href="./knowledge-testing.html">Определить уровень</a></li>
+      <li><a href="./faq.html">FAQ</a></li>
+      <li><a href="#!">Бесплатный урок</a></li>
+      <li><a href="#!">Отзывы</a></li>
+    </ul>
+  </div>
+
+  <a href="./auth.html" class="nav__log-in">
+    <div class="nav__log-in-txt">Вход</div>
+    <div class="nav__log-in-ico">
+      <svg
+        width="16"
+        height="17"
+        viewBox="0 0 16 17"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M1.33337 14.5V12.5L6.26671 7.56667C5.94394 6.64011 5.94518 5.63144 6.27021 4.70568C6.59523 3.77991 7.22482 2.99186 8.05596 2.47043C8.8871 1.949 9.87059 1.72506 10.8455 1.83526C11.8205 1.94545 12.7292 2.38326 13.423 3.07705C14.1168 3.77083 14.5546 4.67953 14.6648 5.65449C14.775 6.62945 14.551 7.61294 14.0296 8.44408C13.5082 9.27522 12.7201 9.9048 11.7944 10.2298C10.8686 10.5549 9.85993 10.5561 8.93337 10.2333L8.00004 11.1667H6.66671V13.1667H4.66671V15.1667H2.00004C1.60004 15.1667 1.33337 14.9 1.33337 14.5ZM11.3334 5.5C11.3334 5.68409 11.1842 5.83333 11.0001 5.83333C10.816 5.83333 10.6667 5.68409 10.6667 5.5C10.6667 5.3159 10.816 5.16667 11.0001 5.16667C11.1842 5.16667 11.3334 5.3159 11.3334 5.5ZM11.0001 4.5C10.4478 4.5 10.0001 4.94771 10.0001 5.5C10.0001 6.05228 10.4478 6.5 11.0001 6.5C11.5523 6.5 12.0001 6.05228 12.0001 5.5C12.0001 4.94771 11.5523 4.5 11.0001 4.5Z"
+          fill="white"
+        />
+      </svg>
+    </div>
+  </a>
+</nav>
+</div>
+  <div class="header__socials _internal-page"><div class="socials">
+  <a href="#!" class="socials__vk"
+    ><svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="24" height="24" rx="5" fill="white" />
+      <path
+        d="M4.98717 8.55823C5.16931 8.49752 5.76607 8.51562 6.26215 8.55823C6.83898 8.60777 7.65855 8.74037 7.71926 8.83144C7.88771 9.10398 9.14902 11.387 9.54066 11.8816C9.93678 12.3818 10.4377 11.4263 10.4377 10.379C10.4377 9.64225 9.8594 8.66448 9.54066 8.74037C9.61351 8.08467 10.9385 8.10222 11.9085 8.19395C12.4978 8.24968 13.2138 8.69483 13.1834 9.01358V11.7001C13.5113 13.2301 15.6423 10.5664 15.6423 9.19572C15.6423 9.01358 15.5831 8.55823 16.2798 8.55823H18.6476C19.5446 9.01358 18.4503 10.501 17.5548 11.5635C16.5712 12.5835 17.0539 13.3394 17.0539 13.3394L18.6476 15.0242C19.959 16.4084 18.2241 16.3447 17.5548 16.3447C16.4287 16.3447 15.8108 15.9797 14.0804 14.7048C13.6575 14.3931 13.1986 14.9027 13.1834 15.7072C13.2563 16.4358 12.6689 16.3447 11.9085 16.3447C8.20646 15.9797 6.74934 14.386 4.98717 9.42339C4.87412 9.105 4.80504 8.61894 4.98717 8.55823Z"
+        fill="#242424"
+      />
+    </svg>
+  </a>
+  <a href="#!" class="socials__tg"
+    ><svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="24" height="24" rx="12" fill="white" />
+      <path
+        d="M5.4639 11.0987C3.54996 11.8907 6.75635 12.7487 8.59879 13.0787L15.8585 8.54133C16.9805 7.94735 16.601 8.45883 16.271 8.78882L10.4962 13.9861L10.2487 17.286C10.5787 17.55 11.8712 16.1861 12.4762 15.4711L15.1986 17.451C16.4525 18.573 16.876 17.8085 16.931 17.286L18.9934 7.46887C19.5214 5.88492 18.3335 6.09391 17.6735 6.3964L5.4639 11.0987Z"
+        fill="#242424"
+      />
+    </svg>
+  </a>
+</div>
+</div>
+  <div class="header__support _internal-page"><div class="support">
+  <svg
+    width="44"
+    height="44"
+    viewBox="0 0 44 44"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect width="44" height="44" rx="22" fill="#D3FF24" />
+    <path
+      d="M24 19C24 19.5304 23.7893 20.0391 23.4142 20.4142C23.0391 20.7893 22.5304 21 22 21H16L12 25V14C12 12.9 12.9 12 14 12H22C22.5304 12 23.0391 12.2107 23.4142 12.5858C23.7893 12.9609 24 13.4696 24 14V19Z"
+      fill="#242424"
+    />
+    <path
+      d="M28 19H30C30.5304 19 31.0391 19.2107 31.4142 19.5858C31.7893 19.9609 32 20.4696 32 21V32L28 28H22C21.4696 28 20.9609 27.7893 20.5858 27.4142C20.2107 27.0391 20 26.5304 20 26V25"
+      stroke="#242424"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+</div>
+</div>
+</div></header>
+      <main class="page">
+        <section class="page__purpose purpose">
+          <div class="purpose__in-container">
+  <h2 class="purpose__title _title-2">Цель и&#160;задачи определения уровня</h2>
+  <div class="purpose__desc">
+    Цель определения уровня является ключевой для эффективного обучения,
+    поскольку позволяет студенту выбрать подходящий уровень курсов или
+    программы, соответствующий его знаниям и&#160;навыкам. Основные задачи
+    определения уровня включают в&#160;себя:
+  </div>
+  <div class="purpose__box">
+    <div class="purpose__tasks">
+      <div class="purpose__task">
+        Определение текущих знаний и&#160;умений студента в&#160;определенной области
+      </div>
+      <div class="purpose__task">
+        Оценка уровня владения языком, если речь идет о&#160;языковом обучении
+      </div>
+      <div class="purpose__task">
+        Помощь студенту выбрать подходящие курсы или программы обучения
+      </div>
+      <div class="purpose__task">
+        Создание индивидуализированного плана обучения для каждого студента
+      </div>
+    </div>
+    <div class="purpose__img">
+      <img src="./img/determine-level/determine-level-img.jpg" alt="" />
+    </div>
+  </div>
+</div>
+
+        </section>
+        <section class="page__benefit benefit">
+          <div class="benefit__in-container">
+  <h2 class="benefit__title _title-2">Проходя тестирование, вы&#160;получаете</h2>
+  <div class="benefit__items">
+    <div class="benefit__item">
+      <div class="benefit__item-img _ibg">
+        <img src="./img/determine-level/ease.jpg" alt="Легкость" />
+      </div>
+      <div class="benefit__item-content">
+        <div class="benefit__item-title">Легкость</div>
+        <div class="benefit__item-desc">
+          Наш процесс тестирования разработан с&#160;учетом удобства студентов.
+          Четкие инструкции и&#160;понятные задания делают процесс прохождения теста
+          легким и&#160;доступным для всех.
+        </div>
+      </div>
+    </div>
+    <div class="benefit__item">
+      <div class="benefit__item-img _ibg">
+        <img src="./img/determine-level/speed.jpg" alt="Быстрота" />
+      </div>
+      <div class="benefit__item-content">
+        <div class="benefit__item-title">Быстрота</div>
+        <div class="benefit__item-desc">
+          Мы&#160;ценим ваше время, поэтому наши тесты способны оперативно оценить
+          ваш уровень знаний. Это помогает быстро определить дальнейший план
+          обучения и&#160;достичь результатов быстрее
+        </div>
+      </div>
+    </div>
+    <div class="benefit__item">
+      <div class="benefit__item-img _ibg">
+        <img src="./img/determine-level/fun.jpg" alt="Веселье" />
+      </div>
+      <div class="benefit__item-content">
+        <div class="benefit__item-title">Веселье</div>
+        <div class="benefit__item-desc">
+          Наш подход к&#160;тестированию включает элементы игры и&#160;интерактивности,
+          делая процесс обучения увлекательным и&#160;увлекательным. Проходите тесты
+          с&#160;удовольствием и&#160;получайте новые знания с&#160;улыбкой!
+        </div>
+      </div>
+    </div>
+    <div class="benefit__item">
+      <div class="benefit__item-img _ibg">
+        <img
+          src="./img/determine-level/individualization.jpg"
+          alt="Индивидуализация"
+        />
+      </div>
+      <div class="benefit__item-content">
+        <div class="benefit__item-title">Индивидуализация</div>
+        <div class="benefit__item-desc">
+          Наши тесты помогают создать персонализированный план обучения,
+          учитывая ваши текущие знания и&#160;потребности. Обучение становится более
+          эффективным и&#160;результативным
+        </div>
+      </div>
+    </div>
+    <div class="benefit__item">
+      <div class="benefit__item-img _ibg">
+        <img src="./img/determine-level/motivation.jpg" alt="Мотивация" />
+      </div>
+      <div class="benefit__item-content">
+        <div class="benefit__item-title">Мотивация</div>
+        <div class="benefit__item-desc">
+          Успешное прохождение теста становится мощным стимулом для дальнейшего
+          обучения. Поддерживайте свою мотивацию и&#160;двигайтесь к&#160;новым
+          достижениям с&#160;нашими тестами
+        </div>
+      </div>
+    </div>
+    <div class="benefit__item">
+      <div class="benefit__item-img _ibg">
+        <img
+          src="./img/determine-level/determination-progress.jpg"
+          alt="Определение прогресса"
+        />
+      </div>
+      <div class="benefit__item-content">
+        <div class="benefit__item-title">Определение прогресса</div>
+        <div class="benefit__item-desc">
+          Повторное тестирование поможет вам отслеживать свой прогресс и&#160;успехи
+          в&#160;изучении материала. Смотрите на&#160;свой рост и&#160;радуйтесь своим
+          достижениям!
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="benefit__btn">
+    <div class="benefit__btn-text">Начать тестирование</div>
+    <div class="benefit__btn-ico">
+      <img src="./img/icons/mouse-pointer-click.svg" alt="" />
+    </div>
+  </div>
+</div>
+
+        </section>
+      </main>
+      <footer class="footer"><div class="footer__in-container">
+  <div class="footer__floors">
+    <div class="footer__first-floor">
+      <div class="footer__box">
+        <a href="./index.html" class="footer__logo">
+          Global <br />
+          Speak.ru
+        </a>
+        <div class="footer__place">
+          ул.&#160;Ленина, д.&#160;10, офис 305&#160;г. Москва, Россия, 123456
+        </div>
+      </div>
+      <nav class="footer__nav footer-menu">
+        <ul class="footer-menu__list">
+          <li class="footer-menu__item">
+            <div class="footer-menu__item-title">О&#160;нас</div>
+            <ul>
+              <li><a href="#!">Команда</a></li>
+              <li><a href="#!">Миссия</a></li>
+              <li><a href="#!">Партнеры</a></li>
+            </ul>
+          </li>
+          <li class="footer-menu__item">
+            <div class="footer-menu__item-title">Программы</div>
+            <ul>
+              <li><a href="#!">Ин. языки для детей</a></li>
+              <li><a href="#!">Разговорный курс</a></li>
+              <li><a href="#!">Ин. языки для IT</a></li>
+              <li><a href="#!">Ин. языки для SEO</a></li>
+              <li><a href="#!">Ин. языки для Pre-Intermediate</a></li>
+              <li><a href="#!">Подготовка к&#160;международным экзаменам</a></li>
+              <li><a href="#!">Бизнес-английский</a></li>
+              <li><a href="#!">Все программы</a></li>
+            </ul>
+          </li>
+          <li class="footer-menu__item">
+            <div class="footer-menu__item-title">Статьи</div>
+            <ul>
+              <li><a href="#!">Советы по&#160;изучению</a></li>
+              <li><a href="#!">Интересные факты о&#160;языках</a></li>
+              <li><a href="#!">История языков</a></li>
+            </ul>
+          </li>
+          <li class="footer-menu__item">
+            <div class="footer-menu__item-title">Контакты</div>
+            <ul>
+              <li><a href="#!">Обратная связь</a></li>
+              <li><a href="#!">Поддержка пользователей</a></li>
+              <li><a href="#!">Сообщество пользователей</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__socials">
+        <div class="footer__social">
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="30" height="30" rx="6" fill="white" />
+            <path
+              d="M6.82987 13.8735C4.43746 14.8634 8.44544 15.9359 10.7485 16.3484L19.8232 10.6767C21.2256 9.93423 20.7513 10.5736 20.3388 10.9861L13.1203 17.4827L12.8109 21.6076C13.2234 21.9376 14.839 20.2326 15.5952 19.3389L18.9982 21.8138C20.5656 23.2163 21.095 22.2607 21.1637 21.6076L23.7418 9.33613C24.4018 7.3562 22.9168 7.61744 22.0918 7.99555L6.82987 13.8735Z"
+              fill="#242424"
+            />
+          </svg>
+        </div>
+        <div class="footer__social">
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="30" height="30" rx="6" fill="white" />
+            <path
+              d="M6.23397 10.698C6.46164 10.6221 7.20758 10.6448 7.82769 10.698C8.54873 10.76 9.57319 10.9257 9.64908 11.0395C9.85964 11.3802 11.4363 14.2341 11.9258 14.8523C12.421 15.4775 13.0471 14.2831 13.0471 12.9739C13.0471 12.0531 12.3243 10.8308 11.9258 10.9257C12.0169 10.1061 13.6732 10.128 14.8856 10.2427C15.6222 10.3124 16.5173 10.8688 16.4793 11.2672V14.6254C16.8891 16.5379 19.5529 13.2082 19.5529 11.4949C19.5529 11.2672 19.4789 10.698 20.3498 10.698H23.3095C24.4308 11.2672 23.0629 13.1266 21.9435 14.4547C20.714 15.7296 21.3174 16.6745 21.3174 16.6745L23.3095 18.7805C24.9488 20.5108 22.7801 20.4311 21.9435 20.4311C20.5359 20.4311 19.7635 19.9749 17.6006 18.3812C17.0719 17.9917 16.4983 18.6287 16.4793 19.6342C16.5704 20.5449 15.8361 20.4311 14.8856 20.4311C10.2581 19.9749 8.43668 17.9828 6.23397 11.7795C6.09265 11.3815 6.00629 10.7739 6.23397 10.698Z"
+              fill="#242424"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="footer__second-floor">
+      <div class="footer__agreement">
+        <a href="#!" class="footer__agreement-link">Оферта</a>
+        <a href="#!" class="footer__agreement-link"
+          >Политика конфиденциальности</a
+        >
+      </div>
+      <div class="footer__desc">
+        На&#160;нашем сайте мы&#160;используем файлы cookie для улучшения вашего
+        пользовательского опыта. Cookie помогают нам запоминать ваши
+        предпочтения и&#160;настройки, чтобы сделать использование сайта более
+        удобным и&#160;персонализированным. Мы&#160;также используем cookie для сбора
+        анонимной статистики о&#160;посещении сайта, чтобы улучшить его
+        функциональность. Продолжая использовать наш сайт, вы&#160;соглашаетесь с
+        нашей <a href="#!">политикой использования файлов cookie</a>
+      </div>
+    </div>
+    <div class="footer__third-floor">
+      <div class="footer__copyright">
+        <span>&#169;</span> 2019&#160;&#8212; 2024 <a href="./index.html">GlobalSpeak.ru</a>.
+        Все права защищены
+      </div>
+    </div>
+  </div>
+</div>
+</footer>
+    </div>
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>
